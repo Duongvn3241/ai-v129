@@ -1,0 +1,39 @@
+# EAS upload exclusions. This file replaces .gitignore for EAS uploads.
+# Keep android/ in the upload because this project includes native Android sources.
+node_modules/
+.pnpm-store/
+.expo/
+dist/
+web-build/
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.metro-health-check*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+logs/
+.DS_Store
+*.pem
+.env*.local
+*.tsbuildinfo
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+.cache/
+*.tgz
+*.tar.gz
+.webdev/
+# Enforce pnpm as the sole project package manager for EAS.
+package-lock.json
+npm-shrinkwrap.json
+yarn.lock
+!pnpm-lock.yaml
